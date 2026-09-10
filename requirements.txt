@@ -1,0 +1,14 @@
+# Este projeto NAO instala nada por conta propria quando roda ao lado do
+# Whatsapp-Transcritor: o .bat encontra o .venv de la, que ja tem tudo.
+# Use este arquivo so para montar um ambiente proprio e isolado.
+
+# Transcricao. Puxa junto o PyAV (leitura de video) e o numpy.
+faster-whisper>=1.1.0
+
+# DLLs de CUDA/cuDNN entregues via pip - evita instalar o toolkit NVIDIA na mao.
+# Sao ignoradas quando a transcricao cai para CPU.
+nvidia-cublas-cu12>=12.4.0
+nvidia-cudnn-cu12>=9.0.0
+
+# Testes. Nao e necessario para usar o comando, so para desenvolver.
+pytest>=8.0.0

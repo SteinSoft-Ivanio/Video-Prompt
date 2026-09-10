@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Amostras de video para teste - nao versionar gravacao de cliente.
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.wav
